@@ -1,0 +1,21 @@
+<template>
+  <section class="au-animate" if.bind="!haveName">
+    <h2>Hello, Aurelia-Dragula World!</h2>
+    <form role="form" submit.delegate="submit()">
+      <div class="form-group">
+        <label for="fn">Please enter your name:</label>
+        <input type="text" value.bind="firstName" class="form-control" id="fn" placeholder="first name" autofocus>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </section>
+  <section if.bind="haveName">
+    <dragula-and-drop drag-fn.call="dragStart(item, source)" drag-end-fn.call="dragEnd(item)" direction.bind="'horizontal'"
+    drop-fn.call="drop(item, target, source, sibling)"></dragula-and-drop>
+    <div class="row drag-source drop-target">
+      <div repeat.for="letter of nameLetters" class="col-md-1">
+        ${letter}
+      </div>
+    </div>
+  </section>
+</template>
