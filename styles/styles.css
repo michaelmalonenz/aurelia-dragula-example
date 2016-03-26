@@ -137,3 +137,14 @@ div.au-stagger {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
   filter: alpha(opacity=20);
 }
+
+.letters-container {
+  display: flex;
+}
+
+.letter {
+  background-color: rebeccapurple;
+  color: white;
+  padding: 20px;
+  cursor: default;
+}

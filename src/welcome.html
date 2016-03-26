@@ -12,10 +12,8 @@
   <section if.bind="haveName">
     <dragula-and-drop drag-fn.call="dragStart(item, source)" drag-end-fn.call="dragEnd(item)" direction.bind="'horizontal'"
     drop-fn.call="drop(item, target, source, sibling)"></dragula-and-drop>
-    <div class="row drag-source drop-target">
-      <div repeat.for="letter of nameLetters" class="col-md-1">
-        ${letter}
-      </div>
+    <div class="drag-source drop-target letters-container">
+      <compose view-model.bind="letter" repeat.for="letter of nameLetters" data-id.one-time="letter.id"></compose>
     </div>
   </section>
 </template>

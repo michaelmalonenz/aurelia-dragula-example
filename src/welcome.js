@@ -1,4 +1,6 @@
 import {ArrayExtensions} from './arrayextensions';
+import {Letter} from './letter';
+
 export class Welcome {
 
   constructor() {
@@ -9,7 +11,7 @@ export class Welcome {
   submit() {
     this.nameLetters = [];
     for(let i = 0; i < this.firstName.length; i++) {
-      this.nameLetters.push(this.firstName.charAt(i));
+      this.nameLetters.push(new Letter(this.firstName.charAt(i)));
     }
 
     ArrayExtensions.shuffle(this.nameLetters);
