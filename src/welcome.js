@@ -1,12 +1,16 @@
 import {ArrayExtensions} from './arrayextensions';
 import {Letter} from './letter';
-import {moveBefore} from 'aurelia-dragula';
+import {moveBefore, DIRECTION} from 'aurelia-dragula';
 
 export class Welcome {
 
   constructor() {
-    this.firstName = '';
-    this.haveName = false;
+    this.dragDirection = DIRECTION.HORIZONTAL;
+    this.reset();
+  }
+
+  get unjumbledName() {
+    return this.nameLetters.reduce((previous, current) => previous + current.char, '');
   }
 
   submit() {
@@ -16,20 +20,25 @@ export class Welcome {
     }
 
     ArrayExtensions.shuffle(this.nameLetters);
+
+    //If, by chance, we shuffle it to the same as the original name, keep shuffling until it no longer is
+    while(this.unjumbledName === this.firstName)
+      ArrayExtensions.shuffle(this.nameLetters);
+
     this.haveName = true;
-  }
-
-  dragStart(item, source) {
-
-  }
-
-  dragEnd(item) {
-
   }
 
   drop(item, target, source, sibling) {
     let itemId = item.dataset.id;
     let siblingId = sibling ? sibling.dataset.id : null;
     moveBefore(this.nameLetters, (letter) => letter.id === itemId, (letter) => letter.id === siblingId);
+    if (this.unjumbledName === this.firstName)
+      this.winner = true;
+  }
+
+  reset() {
+    this.firstName = '';
+    this.haveName = false;
+    this.winner = false;
   }
 }
