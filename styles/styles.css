@@ -140,11 +140,27 @@ div.au-stagger {
 
 .letters-container {
   display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .letter {
   background-color: rebeccapurple;
   color: white;
+  font-weight: bold;
+  font-size: 50px;
   padding: 20px;
   cursor: default;
+  border: solid 2px #ccc;
+  margin: 3px;
+}
+
+.winners-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.winners-circle .reset-btn {
+  margin: 10px;
 }

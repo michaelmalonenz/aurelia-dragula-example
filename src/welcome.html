@@ -9,14 +9,14 @@
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
   </section>
-  <section show.bind="haveName">
+  <section show.bind="haveName" class="au-animate playpen">
     <dragula-and-drop direction.bind="dragDirection" drop-fn.call="drop(item, target, source, sibling)"></dragula-and-drop>
     <div class="drag-source drop-target letters-container">
       <compose view-model.bind="letter" repeat.for="letter of nameLetters" data-id.one-time="letter.id"></compose>
     </div>
   </section>
-  <section if.bind="winner">
-    <div>Congratulations, you can spell your own name!</div>
-    <button type="button" class="btn btn-default" click.delegate="reset()">reset</button>
+  <section if.bind="winner" class="winners-circle">
+    <div class="winner-text">Congratulations, you can spell your own name!</div>
+    <button type="button" class="btn btn-default reset-btn" click.delegate="reset()">reset</button>
   </section>
 </template>
