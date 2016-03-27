@@ -1,5 +1,6 @@
 import {ArrayExtensions} from './arrayextensions';
 import {Letter} from './letter';
+import {moveBefore} from 'aurelia-dragula';
 
 export class Welcome {
 
@@ -27,7 +28,8 @@ export class Welcome {
   }
 
   drop(item, target, source, sibling) {
-
+    let itemId = item.dataset.id;
+    let siblingId = sibling ? sibling.dataset.id : null;
+    moveBefore(this.nameLetters, (letter) => letter.id === itemId, (letter) => letter.id === siblingId);
   }
-
 }
