@@ -19,11 +19,11 @@ export class Welcome {
       this.nameLetters.push(new Letter(this.firstName.charAt(i)));
     }
 
-    ArrayExtensions.shuffle(this.nameLetters);
-
+    do {
+      ArrayExtensions.shuffle(this.nameLetters);
+    }
     //If, by chance, we shuffle it to the same as the original name, keep shuffling until it no longer is
     while(this.unjumbledName === this.firstName)
-      ArrayExtensions.shuffle(this.nameLetters);
 
     this.haveName = true;
   }
