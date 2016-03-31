@@ -164,3 +164,25 @@ div.au-stagger {
 .winners-circle .reset-btn {
   margin: 10px;
 }
+
+.drop-style{
+  min-height: 2rem;
+  background-color: rgb(187, 119, 148);
+}
+
+.randString{
+  margin: 1rem;
+  padding: 1rem;
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+
+  background-color: rgba(0, 0, 0, .2);
+}
+
+.randString:active{
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
