@@ -11,11 +11,11 @@
     "url": "https://github.com/michaelmalonenz/aurelia-dragula-example/issues"
   },
   "license": "CC0-1.0",
-  "author": "Michael Nalonenz",
+  "author": "Michael Malone",
   "main": "dist/main.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/aurelia/skeleton-navigation"
+    "url": "http://github.com/michaelmalonenz/aurelia-dragula-example"
   },
   "scripts": {
     "test": "gulp test",
@@ -68,7 +68,7 @@
       "aurelia-animator-css": "npm:aurelia-animator-css@^1.0.0-beta.1.1.2",
       "aurelia-binding": "npm:aurelia-binding@^1.0.0-beta.1.3.0",
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1.1.4",
-      "aurelia-dragula": "npm:aurelia-dragula@1.0.0",
+      "aurelia-dragula": "npm:aurelia-dragula@^1.0.1",
       "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0-beta.1.1.1",
       "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.1.4",
       "aurelia-history-browser": "npm:aurelia-history-browser@^1.0.0-beta.1.1.4",
@@ -89,8 +89,6 @@
       "text": "github:systemjs/plugin-text@^0.0.3"
     },
     "devDependencies": {
-      "babel": "npm:babel-core@^5.8.24",
-      "babel-runtime": "npm:babel-runtime@^5.8.24",
       "core-js": "npm:core-js@^1.1.4"
     }
   }

@@ -1,20 +1,10 @@
-import {Dragula} from 'aurelia-dragula';
-
 import {RandString} from './randString';
 
-export class Multiarray{
-  constructor(){
+export class Multiarray {
+  constructor() {
     this.arra = [new RandString(), new RandString(), new RandString()];
     this.arrb = [new RandString(), new RandString()];
     this.arrc = [new RandString()];
-  }
-
-  attached(){
-    this.initializeDragula();
-  }
-
-  initializeDragula(){
-    let dragula = new Dragula();
   }
 
   itemDropped(item, target, source, sibling) {
@@ -24,7 +14,7 @@ export class Multiarray{
     let siblingIndex;
 
 
-    switch(source.dataset.list){
+    switch(source.dataset.list) {
       case 'arra':
         sourceArr = this.arra;
         break;
@@ -38,7 +28,7 @@ export class Multiarray{
         break;
     }
 
-    switch (target.dataset.list){
+    switch (target.dataset.list) {
       case 'arra':
         targetArr = this.arra;
         break;

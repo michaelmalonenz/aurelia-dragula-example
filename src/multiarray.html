@@ -1,9 +1,9 @@
 <template>
   <div class="container-fluid">
+    <dragula-and-drop drop-fn.call="itemDropped(item, target, source, sibling)"></dragula-and-drop>
     <div class="row">
       <div class="col-md-4">
         <h4>Array A</h4>
-        <dragula-and-drop drop-fn.call="itemDropped(item, target, source, sibling)"></dragula-and-drop>
         <div class="drag-source drop-target drop-style" data-list="arra">
           <compose repeat.for="item of arra" view-model.bind="item" data-index.bind="$index"></compose>
         </div>
