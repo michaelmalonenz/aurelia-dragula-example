@@ -1,18 +1,17 @@
 {
-  "name": "aurelia-skeleton-navigation",
-  "version": "1.0.0-beta.1.1.6",
-  "description": "A starter kit for building a standard navigation-style app with Aurelia.",
+  "name": "aurelia-dragula-example",
+  "version": "1.0.1",
+  "description": "An example on how to use aurelia-dragula",
   "keywords": [
     "aurelia",
-    "navigation",
-    "skeleton"
+    "dragula"
   ],
-  "homepage": "http://aurelia.io",
+  "homepage": "https://github.com/michaelmalonenz/aurelia-dragula-example",
   "bugs": {
-    "url": "https://github.com/aurelia/skeleton-navigation/issues"
+    "url": "https://github.com/michaelmalonenz/aurelia-dragula-example/issues"
   },
   "license": "CC0-1.0",
-  "author": "Rob Eisenberg <rob@bluespire.com> (http://robeisenberg.com/)",
+  "author": "Michael Nalonenz",
   "main": "dist/main.js",
   "repository": {
     "type": "git",
@@ -51,7 +50,7 @@
     "isparta": "^3.1.0",
     "istanbul": "^0.3.13",
     "jasmine-core": "^2.1.3",
-    "jspm": "0.16.15",
+    "jspm": "^0.16.15",
     "karma": "^0.13.15",
     "karma-babel-preprocessor": "^6.0.1",
     "karma-chrome-launcher": "^0.2.1",
@@ -69,7 +68,7 @@
       "aurelia-animator-css": "npm:aurelia-animator-css@^1.0.0-beta.1.1.2",
       "aurelia-binding": "npm:aurelia-binding@^1.0.0-beta.1.3.0",
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1.1.4",
-      "aurelia-dragula": "npm:aurelia-dragula@^0.11.0",
+      "aurelia-dragula": "npm:aurelia-dragula@1.0.0",
       "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0-beta.1.1.1",
       "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.1.4",
       "aurelia-history-browser": "npm:aurelia-history-browser@^1.0.0-beta.1.1.4",
@@ -85,6 +84,7 @@
       "bootstrap": "github:twbs/bootstrap@^3.3.5",
       "fetch": "github:github/fetch@^0.11.0",
       "font-awesome": "npm:font-awesome@^4.5.0",
+      "lorem-ipsum": "npm:lorem-ipsum@^1.0.3",
       "node-uuid": "npm:node-uuid@^1.4.7",
       "text": "github:systemjs/plugin-text@^0.0.3"
     },
