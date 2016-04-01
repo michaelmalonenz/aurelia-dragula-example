@@ -129,6 +129,17 @@ div.au-stagger {
   cursor: default;
   border: solid 2px #ccc;
   margin: 3px;
+  border-radius: 5px;
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.letter:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
 }
 
 .winners-circle {
