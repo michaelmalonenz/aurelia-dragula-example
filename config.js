@@ -6,12 +6,11 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-
   map: {
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.0-beta.1.2.0",
     "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.3.1",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.2.0",
-    "aurelia-dragula": "npm:aurelia-dragula@1.0.1",
+    "aurelia-dragula": "npm:aurelia-dragula@1.0.4",
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.2.0",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.1",
     "aurelia-history-browser": "npm:aurelia-history-browser@1.0.0-beta.1.2.0",
@@ -113,7 +112,7 @@ System.config({
       "aurelia-metadata": "npm:aurelia-metadata@1.0.0-beta.1.2.0",
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.0"
     },
-    "npm:aurelia-dragula@1.0.1": {
+    "npm:aurelia-dragula@1.0.4": {
       "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.3.1",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.2.0",
       "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0-beta.1.2.0",
