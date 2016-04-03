@@ -31,6 +31,8 @@ body {
   bottom: 0;
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: #A22D8C;
+  color: white;
 }
 
 @media print {
@@ -150,6 +152,12 @@ div.au-stagger {
 
 .winners-circle .reset-btn {
   margin: 10px;
+}
+
+/* animate page transitions */
+.winners-circle.au-enter-active{
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
 }
 
 .drop-style{

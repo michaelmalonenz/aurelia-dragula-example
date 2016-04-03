@@ -5,7 +5,8 @@ export function configure(aurelia) {
     .standardConfiguration()
     .developmentLogging()
     .plugin('aurelia-dragula')
-    .plugin('aurelia-animator-css');
+    .plugin('aurelia-animator-css')
+    .globalResources('nbspvalueconverter');
 
   aurelia.start().then(() => aurelia.setRoot());
 }
