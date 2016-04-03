@@ -15,8 +15,13 @@
       <compose view-model.bind="letter" repeat.for="letter of nameLetters" data-id.one-time="letter.id"></compose>
     </div>
   </section>
-  <section if.bind="winner" class="winners-circle">
+  <section if.bind="winner" class="winners-circle au-animate">
     <div class="winner-text">Congratulations, you can spell your own name!</div>
     <button type="button" class="btn btn-default reset-btn" click.delegate="reset()">reset</button>
+  </section>
+  <section if.bind="farahWinner" class="winners-circle au-animate">
+    <div class="letters-container">
+      <compose view-model.bind="letter" repeat.for="letter of questionLetters"></compose>
+    </div>
   </section>
 </template>
