@@ -27,8 +27,13 @@ module.exports = {
         "aurelia-loader-default",
         "aurelia-history-browser",
         "aurelia-logging-console",
+        "jquery",
         "bootstrap",
-        "bootstrap/css/bootstrap.css!text"
+        "bootstrap/css/bootstrap.css!text",
+
+        "aurelia-dragula/**/*.js",
+        "aurelia-dragula/**/*.html!text",
+        "aurelia-dragula/**/*.css!text"
       ],
       "options": {
         "inject": true,
