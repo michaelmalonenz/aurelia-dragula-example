@@ -10,7 +10,7 @@
     </form>
   </section>
   <section if.bind="haveName" class="au-animate playpen">
-    <dragula-and-drop direction.bind="dragDirection" drop-fn.call="drop(item, target, source, sibling)"></dragula-and-drop>
+    <dragula-and-drop direction.bind="dragDirection" drop-fn.call="drop(item, target, source, sibling, itemVM, siblingVM)"></dragula-and-drop>
     <div class="drag-source drop-target letters-container">
       <compose view-model.bind="letter" repeat.for="letter of nameLetters" data-id.one-time="letter.id"></compose>
     </div>

@@ -28,9 +28,10 @@ export class Welcome {
     this.haveName = true;
   }
 
-  drop(item, target, source, sibling) {
+  drop(item, target, source, sibling, itemVM, siblingVM) {
     let itemId = item.dataset.id;
     let siblingId = sibling ? sibling.dataset.id : null;
+
     moveBefore(this.nameLetters, (letter) => letter.id === itemId, (letter) => letter.id === siblingId);
     if (this.unjumbledName === 'Farah')
       this.farahWinner = true;
