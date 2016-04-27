@@ -6,11 +6,16 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
+
   map: {
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.0-beta.1.2.0",
     "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.3.2",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.2.0",
+<<<<<<< HEAD
     "aurelia-dragula": "npm:aurelia-dragula@1.1.0",
+=======
+    "aurelia-dragula": "npm:aurelia-dragula@1.0.5",
+>>>>>>> ab2ee7674fda73beb09a0751ca02f2760140fabb
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.2.1",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.2",
     "aurelia-history-browser": "npm:aurelia-history-browser@1.0.0-beta.1.2.0",
@@ -112,7 +117,11 @@ System.config({
       "aurelia-metadata": "npm:aurelia-metadata@1.0.0-beta.1.2.0",
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.0"
     },
+<<<<<<< HEAD
     "npm:aurelia-dragula@1.1.0": {
+=======
+    "npm:aurelia-dragula@1.0.5": {
+>>>>>>> ab2ee7674fda73beb09a0751ca02f2760140fabb
       "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.3.2",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.2.0",
       "aurelia-pal-browser": "npm:aurelia-pal-browser@1.0.0-beta.1.2.0",
@@ -219,7 +228,11 @@ System.config({
       "evp_bytestokey": "npm:evp_bytestokey@1.0.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "inherits": "npm:inherits@2.0.1",
+<<<<<<< HEAD
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+=======
+      "systemjs-json": "github:systemjs/plugin-json@0.1.1"
+>>>>>>> ab2ee7674fda73beb09a0751ca02f2760140fabb
     },
     "npm:browserify-cipher@1.0.0": {
       "browserify-aes": "npm:browserify-aes@1.0.6",
@@ -256,7 +269,11 @@ System.config({
     },
     "npm:buffer-xor@1.0.3": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+<<<<<<< HEAD
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+=======
+      "systemjs-json": "github:systemjs/plugin-json@0.1.1"
+>>>>>>> ab2ee7674fda73beb09a0751ca02f2760140fabb
     },
     "npm:buffer@3.6.0": {
       "base64-js": "npm:base64-js@0.0.8",
@@ -273,13 +290,21 @@ System.config({
       "string_decoder": "github:jspm/nodelibs-string_decoder@0.1.0"
     },
     "npm:constants-browserify@0.0.1": {
+<<<<<<< HEAD
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+=======
+      "systemjs-json": "github:systemjs/plugin-json@0.1.1"
+>>>>>>> ab2ee7674fda73beb09a0751ca02f2760140fabb
     },
     "npm:core-js@1.2.6": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
+<<<<<<< HEAD
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+=======
+      "systemjs-json": "github:systemjs/plugin-json@0.1.1"
+>>>>>>> ab2ee7674fda73beb09a0751ca02f2760140fabb
     },
     "npm:core-util-is@1.0.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
@@ -329,14 +354,22 @@ System.config({
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "miller-rabin": "npm:miller-rabin@4.0.0",
       "randombytes": "npm:randombytes@2.0.3",
+<<<<<<< HEAD
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+=======
+      "systemjs-json": "github:systemjs/plugin-json@0.1.1"
+>>>>>>> ab2ee7674fda73beb09a0751ca02f2760140fabb
     },
     "npm:elliptic@6.2.3": {
       "bn.js": "npm:bn.js@4.11.3",
       "brorand": "npm:brorand@1.0.5",
       "hash.js": "npm:hash.js@1.0.3",
       "inherits": "npm:inherits@2.0.1",
+<<<<<<< HEAD
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+=======
+      "systemjs-json": "github:systemjs/plugin-json@0.1.1"
+>>>>>>> ab2ee7674fda73beb09a0751ca02f2760140fabb
     },
     "npm:evp_bytestokey@1.0.0": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
@@ -381,7 +414,11 @@ System.config({
       "create-hash": "npm:create-hash@1.1.2",
       "evp_bytestokey": "npm:evp_bytestokey@1.0.0",
       "pbkdf2": "npm:pbkdf2@3.0.4",
+<<<<<<< HEAD
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+=======
+      "systemjs-json": "github:systemjs/plugin-json@0.1.1"
+>>>>>>> ab2ee7674fda73beb09a0751ca02f2760140fabb
     },
     "npm:path-browserify@0.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -393,7 +430,11 @@ System.config({
       "crypto": "github:jspm/nodelibs-crypto@0.1.0",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2",
+<<<<<<< HEAD
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+=======
+      "systemjs-json": "github:systemjs/plugin-json@0.1.1"
+>>>>>>> ab2ee7674fda73beb09a0751ca02f2760140fabb
     },
     "npm:process@0.11.2": {
       "assert": "github:jspm/nodelibs-assert@0.1.0"
