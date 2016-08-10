@@ -80,7 +80,9 @@
       "aurelia-templating-resources": "npm:aurelia-templating-resources@^1.0.0",
       "aurelia-templating-router": "npm:aurelia-templating-router@^1.0.0",
       "bootstrap": "github:twbs/bootstrap@^3.3.5",
-      "font-awesome": "npm:font-awesome@^4.5.0",
+      "elliptic": "npm:elliptic@^6.3.1",
+      "font-awesome": "npm:font-awesome@^4.6.3",
+      "jquery": "npm:jquery@2.2.4",
       "lorem-ipsum": "npm:lorem-ipsum@^1.0.3",
       "node-uuid": "npm:node-uuid@^1.4.7",
       "text": "github:systemjs/plugin-text@^0.0.8"
