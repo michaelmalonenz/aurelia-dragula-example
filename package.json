@@ -67,7 +67,7 @@
       "aurelia-animator-css": "npm:aurelia-animator-css@^1.0.1",
       "aurelia-binding": "npm:aurelia-binding@^1.0.6",
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0",
-      "aurelia-dragula": "npm:aurelia-dragula@^1.2.6",
+      "aurelia-dragula": "npm:aurelia-dragula@^1.4.0",
       "aurelia-framework": "npm:aurelia-framework@^1.0.5",
       "aurelia-history-browser": "npm:aurelia-history-browser@^1.0.0",
       "aurelia-loader-default": "npm:aurelia-loader-default@^1.0.0",
@@ -85,6 +85,7 @@
       "jquery": "npm:jquery@2.2.4",
       "jquery-migrate": "npm:jquery-migrate@^3.0.0",
       "lorem-ipsum": "npm:lorem-ipsum@^1.0.3",
+      "michaelmalonenz/aurelia-dragula": "github:michaelmalonenz/aurelia-dragula@master",
       "node-uuid": "npm:node-uuid@^1.4.7",
       "text": "github:systemjs/plugin-text@^0.0.9"
     },
