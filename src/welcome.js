@@ -15,17 +15,19 @@ export class Welcome {
 
   submit() {
     this.nameLetters = [];
-    for(let i = 0; i < this.firstName.length; i++) {
-      this.nameLetters.push(new Letter(this.firstName.charAt(i)));
-    }
+    if (this.firstName && this.firstName.length) {
+      for(let i = 0; i < this.firstName.length; i++) {
+        this.nameLetters.push(new Letter(this.firstName.charAt(i)));
+      }
 
-    do {
-      ArrayExtensions.shuffle(this.nameLetters);
-    }
-    //If, by chance, we shuffle it to the same as the original name, keep shuffling until it no longer is
-    while(this.unjumbledName === this.firstName)
+      do {
+        ArrayExtensions.shuffle(this.nameLetters);
+      }
+      //If, by chance, we shuffle it to the same as the original name, keep shuffling until it no longer is
+      while(this.unjumbledName === this.firstName)
 
-    this.haveName = true;
+      this.haveName = true;
+    }
   }
 
   drop(item, target, source, sibling, itemVM, siblingVM) {
