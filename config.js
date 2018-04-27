@@ -10,7 +10,7 @@ System.config({
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.4",
     "aurelia-binding": "npm:aurelia-binding@1.7.1",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.1",
-    "aurelia-dragula": "npm:aurelia-dragula@1.5.3",
+    "aurelia-dragula": "npm:aurelia-dragula@1.6.0",
     "aurelia-framework": "npm:aurelia-framework@1.2.0",
     "aurelia-history-browser": "npm:aurelia-history-browser@1.1.1",
     "aurelia-loader-default": "npm:aurelia-loader-default@1.0.4",
@@ -114,7 +114,7 @@ System.config({
       "aurelia-metadata": "npm:aurelia-metadata@1.0.3",
       "aurelia-pal": "npm:aurelia-pal@1.8.0"
     },
-    "npm:aurelia-dragula@1.5.3": {
+    "npm:aurelia-dragula@1.6.0": {
       "aurelia-binding": "npm:aurelia-binding@1.7.1",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.3.2",
       "aurelia-logging": "npm:aurelia-logging@1.4.0",
