@@ -67,7 +67,7 @@
       "aurelia-animator-css": "npm:aurelia-animator-css@^1.0.1",
       "aurelia-binding": "npm:aurelia-binding@^1.0.6",
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0",
-      "aurelia-dragula": "npm:aurelia-dragula@^1.4.3",
+      "aurelia-dragula": "npm:aurelia-dragula@^1.6.0",
       "aurelia-framework": "npm:aurelia-framework@^1.0.5",
       "aurelia-history-browser": "npm:aurelia-history-browser@^1.0.0",
       "aurelia-loader-default": "npm:aurelia-loader-default@^1.0.0",
