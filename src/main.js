@@ -1,11 +1,20 @@
+import environment from './environment'
+import 'bootstrap'
 
-export function configure(aurelia) {
+export function configure (aurelia) {
   aurelia.use
     .standardConfiguration()
-    .developmentLogging()
+    .feature('resources')
     .plugin('aurelia-dragula')
     .plugin('aurelia-animator-css')
-    .globalResources('nbspvalueconverter');
 
-  aurelia.start().then(() => aurelia.setRoot());
+  if (environment.debug) {
+    aurelia.use.developmentLogging()
+  }
+
+  if (environment.testing) {
+    aurelia.use.plugin('aurelia-testing')
+  }
+
+  aurelia.start().then(() => aurelia.setRoot())
 }

@@ -1,60 +1,59 @@
-import {RandString} from './randString';
+import { RandString } from './randString'
 
 export class Multiarray {
-  constructor() {
-    this.arra = [new RandString(), new RandString(), new RandString()];
-    this.arrb = [new RandString(), new RandString()];
-    this.arrc = [new RandString()];
+  constructor () {
+    this.arra = [new RandString(), new RandString(), new RandString()]
+    this.arrb = [new RandString(), new RandString()]
+    this.arrc = [new RandString()]
   }
 
-  itemDropped(item, target, source, sibling) {
-    let theItem;
-    let sourceArr;
-    let targetArr;
-    let siblingIndex;
+  itemDropped (item, target, source, sibling) {
+    let theItem
+    let sourceArr
+    let targetArr
+    let siblingIndex
 
-
-    switch(source.dataset.list) {
+    switch (source.dataset.list) {
       case 'arra':
-        sourceArr = this.arra;
-        break;
+        sourceArr = this.arra
+        break
       case 'arrb':
-        sourceArr = this.arrb;
-        break;
+        sourceArr = this.arrb
+        break
       case 'arrc':
-        sourceArr = this.arrc;
-        break;
+        sourceArr = this.arrc
+        break
       default:
-        break;
+        break
     }
 
     switch (target.dataset.list) {
       case 'arra':
-        targetArr = this.arra;
-        break;
+        targetArr = this.arra
+        break
       case 'arrb':
-        targetArr = this.arrb;
-        break;
+        targetArr = this.arrb
+        break
       case 'arrc':
-        targetArr = this.arrc;
-        break;
+        targetArr = this.arrc
+        break
       default:
-        break;
+        break
     }
 
-    theItem = sourceArr[parseInt(item.dataset.index)];
-    siblingIndex = sibling != undefined? parseInt(sibling.dataset.index) : 'end';
+    theItem = sourceArr[parseInt(item.dataset.index)]
+    siblingIndex = sibling != null ? parseInt(sibling.dataset.index) : 'end'
 
-    sourceArr.splice(parseInt(item.dataset.index), 1);
-    if(parseInt(siblingIndex) === 0){
-      targetArr.unshift(theItem);
-    } else if(siblingIndex === 'end'){
-      targetArr.push(theItem);
+    sourceArr.splice(parseInt(item.dataset.index), 1)
+    if (parseInt(siblingIndex) === 0) {
+      targetArr.unshift(theItem)
+    } else if (siblingIndex === 'end') {
+      targetArr.push(theItem)
     } else {
-      if(source.dataset.list == target.dataset.list){
-        siblingIndex--;
+      if (source.dataset.list === target.dataset.list) {
+        siblingIndex--
       }
-      targetArr.splice(parseInt(siblingIndex), 0, theItem);
+      targetArr.splice(parseInt(siblingIndex), 0, theItem)
     }
   }
 }

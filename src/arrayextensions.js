@@ -1,21 +1,20 @@
 export class ArrayExtensions {
-
-  static shuffle(array) {
-    var currentIndex = array.length, temporaryValue, randomIndex;
+  static shuffle (array) {
+    let currentIndex = array.length
+    let temporaryValue, randomIndex
 
     // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-
+    while (currentIndex !== 0) {
       // Pick a remaining element...
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex -= 1;
+      randomIndex = Math.floor(Math.random() * currentIndex)
+      currentIndex -= 1
 
       // And swap it with the current element.
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
+      temporaryValue = array[currentIndex]
+      array[currentIndex] = array[randomIndex]
+      array[randomIndex] = temporaryValue
     }
 
-    return array;
+    return array
   }
 }

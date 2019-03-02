@@ -1,10 +1,10 @@
-import LoremIpsum from 'lorem-ipsum';
+import LoremIpsum from 'lorem-ipsum'
 
-export class RandString{
-  constructor() {
+export class RandString {
+  constructor () {
     this.text = LoremIpsum({
       count: 1,
       units: 'sentences'
-    });
+    })
   }
 }
