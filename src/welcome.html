@@ -4,9 +4,10 @@
     <form role="form" submit.delegate="submit()">
       <div class="form-group">
         <label for="fn">Please enter your name:</label>
-        <input type="text" value.bind="firstName" class="form-control" id="fn" placeholder="first name" autofocus>
+        <input type="text" value.bind="firstName" class="form-control" id="fn" placeholder="first name" minlength="3" autofocus>
+        <span if.bind="firstName && firstName.length < 3">Please enter a first name (with at least 3 characters)</span>
       </div>
-      <button type="submit" class="btn btn-default">Submit</button>
+      <button type="submit" class="btn btn-default" disabled.bind="!firstName || firstName.length < 3">Submit</button>
     </form>
   </section>
   <section if.bind="haveName" class="au-animate playpen">
